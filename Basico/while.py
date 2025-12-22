@@ -67,3 +67,7 @@ while linha <= qtd_linhas:
     linha += 1
 
 print('Acabou')
+
+
+
+# Quinto video (Iterando strings com while)
