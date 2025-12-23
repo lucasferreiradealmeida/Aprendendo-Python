@@ -1,7 +1,8 @@
-nome = input('Digite seu nome: ')
-encontrar = input('Digite o que deseja encontrar: ')
+lista = ['maria','lucas','luiz']
+lista.append("João")
 
-if encontrar in nome:
-    print(f'{encontrar} está em {nome}')
-else:
-    print(f'{encontrar} não está em {nome}')
+lista_enumerada = list(enumerate(lista))
+
+print(lista_enumerada )
+for indice, nome in enumerate(lista):
+    print(indice, nome)

@@ -3,8 +3,16 @@ Listas em Python
 Tipo List - Mutavél
 Suporta vários valores de qualquer tipo
 Conhecimento reutilizaveis - índices e fatiamento
-Métodos úteis: append,insert,pop,del,clear,extend +
+Métodos úteis: 
+    append - Adiciona um item ao final
+    insert - Adiciona um item no indice escolhido
+    pop - Remove do final ou do indice escolhido
+    del - apaga um indice
+    clear - limpa a lista
+    extend - estende a lista
+    + - concatena listas
 """
+
 #         01234
 #        -54321
 string = 'ABCDE' # 5 caracteres (len)
@@ -32,3 +40,77 @@ lista.pop() # retira o ultimo item da lista
 lista.append(60) 
 lista.append(70) 
 print(lista)
+
+# Aula 3 (Tipo list)
+
+lista = [10,20,30,40]
+lista.append("Luiz")
+nome = lista.pop
+lista.append(1233)
+del lista[-1]
+# lista.clear
+lista.insert(100,5)
+print(lista[4])
+
+# Aula 4 (Concatenando e estendendo)
+
+lista_a = [1,2,3]
+lista_b = [4,5,6]
+lista_c = lista_a + lista_b
+lista_a.extend(lista_b)
+print(lista_a)
+
+
+# Aula 5 (list e copy)
+
+lista_a = ['Luiz', 'Maria' , 1 , True, 1.2]
+lista_b = lista_a.copy()
+
+lista_a[0] = "Qualquer coisa"
+print(lista_a)
+print(lista_b)
+
+# Aula 6 (for in com tipo list)
+
+lista = ['Maria','Lucas','Juliano']
+
+for name in lista:
+    print(name, type(nome))
+
+
+
+# Aula 7 (empacotamento e desempacotamento)
+
+_, _, nome, *resto = ['maria','lucas','luiz']
+print(nome)
+
+# Aula 8 (Tupla)
+
+"""
+Tipo tupla - Uma lista imutavael
+"""
+
+nomes = 'maria','lucas','luiz'
+
+print(nomes[-1])
+print(nomes)
+
+# Aula 9 (pegar índices)
+
+lista = ['maria','lucas','luiz']
+lista.append("João")
+
+lista_enumerada = list(enumerate(lista))
+
+print(lista_enumerada )
+for indice, nome in enumerate(lista):
+    print(indice, nome)
+
+for item in enumerate(lista):
+    indice, nome = item
+    print(indice, nome)
+
+for tupla_enumerada in enumerate(lista):
+    print('FOR da tupla:')
+    for valor in tupla_enumerada:
+        print(f'\t{valor}')
