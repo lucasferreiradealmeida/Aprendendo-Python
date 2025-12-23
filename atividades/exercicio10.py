@@ -5,7 +5,6 @@ inserir,apagar e listar valores da sua lista
 Não permita que o programe quebre com 
 erros de indices inexistentes na lista
 """
-import os
 
 lista = []
 while True:

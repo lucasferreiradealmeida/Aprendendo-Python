@@ -114,3 +114,16 @@ for tupla_enumerada in enumerate(lista):
     print('FOR da tupla:')
     for valor in tupla_enumerada:
         print(f'\t{valor}')
+
+
+# Aula 10 (split, join e strip)
+
+"""
+split e join com list e str
+split - divide uma string
+join - une uma string
+"""
+
+frase = "Olha só que, coisa interresante"
+lista_frases = frase.split(",")
+print(lista_frases)
