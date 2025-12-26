@@ -1,8 +1,9 @@
-lista = ['maria','lucas','luiz']
-lista.append("João")
+string = 'ABCD'
+lista = ['Maria', 'Helena', 1, 2, 3, 'Eduarda']
+tupla = 'Python', 'é', 'legal'
 
-lista_enumerada = list(enumerate(lista))
+# a,b,c = lista
+# print(a,c)
 
-print(lista_enumerada )
-for indice, nome in enumerate(lista):
-    print(indice, nome)
+for nome in lista:
+    print(nome, end= ' ')
