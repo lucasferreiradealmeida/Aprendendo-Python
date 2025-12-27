@@ -1,9 +1,11 @@
-string = 'ABCD'
-lista = ['Maria', 'Helena', 1, 2, 3, 'Eduarda']
-tupla = 'Python', 'é', 'legal'
+frase = '   Olha só que   , coisa interessante          '
+lista_frases_cruas = frase.split(',')
 
-# a,b,c = lista
-# print(a,c)
+# lista_frases = []
+# for i, frase in enumerate(lista_frases_cruas):
+#     lista_frases.append(lista_frases_cruas[i].strip())
 
-for nome in lista:
-    print(nome, end= ' ')
+# print(lista_frases_cruas)
+# print(lista_frases)
+frases_unidas = ', '.join(lista_frases)
+print(frases_unidas)

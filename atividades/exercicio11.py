@@ -24,3 +24,25 @@ contrário disso:
 O primeiro dígito do CPF é 7
 """
 
+cpf = ["7","4","6","8","2","4","8","9","0"]
+
+somatorio = 0
+multiplicacao = range(10,1,-1)
+
+for i in range(len(cpf)):
+    somatorio += int(cpf[i]) * multiplicacao[i]
+
+print(somatorio)
+
+resultado_do_somatorio_multiplicacao = somatorio * 10
+
+print(resultado_do_somatorio_multiplicacao)
+
+resultado_do_somatorio_divisao = resultado_do_somatorio_multiplicacao % 11
+
+resultado_do_somatorio_divisao = '0' if resultado_do_somatorio_divisao > 9 else resultado_do_somatorio_divisao
+
+print(resultado_do_somatorio_divisao)
+
+
+
