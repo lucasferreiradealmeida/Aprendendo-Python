@@ -39,4 +39,18 @@ print(f'{1000.6371267361821:0=+10,.1f}')
 print(f'O hexadecimal de 1500 é {1500:08X}')
 print{f'{variavel!r}'}
 
+ 
+ # Aula 3 (replace)
 
+import re
+
+# cpf_enviado_usuario = '321.543.534-76'.replace('.','') \
+# .replace('-','') 
+# print(cpf_enviado_usuario)
+
+cpf_enviado_usuario = re.sub(
+    r'[^0-9]',
+    '',
+    '321.543.534-76'
+)
+print(cpf_enviado_usuario)

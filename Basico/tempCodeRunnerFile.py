@@ -1,11 +1,12 @@
-frase = '   Olha só que   , coisa interessante          '
-lista_frases_cruas = frase.split(',')
+import re
 
-# lista_frases = []
-# for i, frase in enumerate(lista_frases_cruas):
-#     lista_frases.append(lista_frases_cruas[i].strip())
+# cpf_enviado_usuario = '321.543.534-76'.replace('.','') \
+# .replace('-','') 
+# print(cpf_enviado_usuario)
 
-# print(lista_frases_cruas)
-# print(lista_frases)
-frases_unidas = ', '.join(lista_frases)
-print(frases_unidas)
+cpf_enviado_usuario = re.sub(
+    r'[^0-9]',
+    '',
+    '321.543.534-76'
+)
+print(cpf_enviado_usuario)
